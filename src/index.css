@@ -1,13 +1,265 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.login-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 10vh;
+  box-shadow: 5px 15px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 0;
+}
+
+.title {
+  font-weight: 700;
+  color: rgb(83, 73, 73);
+}
+
+.left {
+  width: 50%;
+  height: 100%;
+}
+
+.left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+.right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin-bottom: 80px;
+}
+
+.forgot {
+  text-align: end;
+  cursor: pointer;
+}
+
+.input-group-text {
+  background: none;
+  border-radius: 20px;
+}
+
+.input {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  width: 100%;
+  padding: 8px 12px;
+}
+
+.btn-primary, .btn-light {
+  border-radius: 25px;
+  padding: 12px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.btn-light {
+  width: 60%;
+  border: 1px solid #ccc;
+  background: white;
+  font-weight: 700;
+  color: rgb(83, 73, 73);
+  position: absolute;
+  bottom: 60px;
+}
+
+/*User section*/
+body {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+p, h4, h2 {
+  padding: 0;
+  margin: 0 !important;
+}
+
+.user-main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.user-side-menu {
+  width: 15%;
+  height: 100%;
+  background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+  color: white;
+  position: relative;
+}
+.menu-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+}
+.logo i {
+  margin-right: 3px;
+}
+.user-name {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  background: white;
+  padding: 12px;
+}
+.user-name i {
+  margin: 0 20px;
+  color: black;
+}
+.user-name p {
+  color: rgb(36, 34, 34);
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+  text-align: left;
+}
+.menu-list li {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+  padding: 12px;
+}
+.menu-list li i {
+  margin-right: 10px;
+}
+.rounded-pill {
+  margin-left: 10px;
+}
+.li-active {
+  color: black;
+  background: white;
+  border-radius: 10px;
+}
+.li-active i {
+  color: #48c6ef;
+}
+
+.exit {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  bottom: 80px;
+  cursor: pointer;
+}
+.exit:hover {
+  opacity: 0.5;
+}
+.exit i {
+  margin: 0 5px;
+}
+
+.user-container {
+  width: 85%;
+  height: 100%;
+  background: rgb(228, 228, 228);
+}
+.top {
+  height: 10vh;
+  width: 100%;
+  background: white;
+}
+.top h2 {
+  width: 90%;
+  margin: 0 auto !important;
+  padding-top: 25px;
+}
+.middle {
+  height: 10vh;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.middle .input-group {
+  width: 400px;
+}
+.middle .input {
+  background: rgb(218, 215, 215);
+}
+.middle .input-group-text {
+  border-radius: 10px;
+  background: rgb(218, 215, 215);
+}
+.middle .search {
+  background: rgb(248, 246, 246);
+}
+.middle .btn-primary {
+  font-size: 16px;
+  width: 350px;
+  border-radius: 10px;
+}
+.middle .btn i {
+  margin-right: 5px;
+}
+
+.bottom {
+  height: 80vh;
+  width: 90%;
+  margin: 0 auto;
+}
+.table-header {
+  background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+  color: white;
+}
+.table {
+  text-align: center;
+  border-radius: 10px;
+  
+}
+.table tbody {
+  background: white;
+  height: 100%;
+}
+.table .fa-times-circle:hover {
+  cursor: pointer;
+  color: rgb(172, 53, 53);
 }
